@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      button {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #6a5acd;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      button:hover {background-color: #95358e}
+
+      button:active {
+        background-color: #ee82ee;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+</style>
+</head>
+<body>
+
+<h2 style="color:purple;">Ciao! Premi il pulsante per vedere la data e l'ora!</h2>
+
+<button type="button"
+        onclick="document.getElementById('test').innerHTML = Date()">
+  Premimi!</button>
+
+<p id="test"></p>
+
+</body>
+</html>
